@@ -9,12 +9,12 @@
     height: 27px;
     a {
         content: "";
-        background: url(/public/img/tooltip-normal.svg) no-repeat top right;
+        background: url(../img/tooltip-normal.svg) no-repeat top right;
         display: block;
         width: 27px;
         height: 27px;
         &:hover {
-            background: url(/public/img/tooltip-hover.svg) no-repeat top right;
+            background: url(../img/tooltip-hover.svg) no-repeat top right;
         }
     }
 }
