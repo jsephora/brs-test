@@ -8,10 +8,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 a {
   color: $link;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $link-hover;
   }
-/*   &:visited {
+  /*   &:visited {
     color: $link-visited;
   } */
 }
@@ -24,32 +25,6 @@ a {
   border-bottom: 4px solid $red-tint1;
   p {
     margin-bottom: 0;
-  }
-}
-.navbar {
-  background-color: $bga-blue;
-  padding-left: 0;
-  padding-right: 0;
-  min-height: 56px;
-}
-.navbar-brand {
-  font-size: 0.875rem;
-}
-.navbar-dark {
-  .navbar-toggler {
-    border: 0;
-    padding: 0.25rem;
-    color: white;
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-    .menu {
-      display: block;
-      font-size: .875rem;
-    }
-    &:hover {
-      background-color: $bga-blue-tint1;
-    }
   }
 }
 .pageheader {
@@ -77,10 +52,9 @@ a {
 }
 #accountWrapper {
   display: none;
-
 }
 
-
+// Responsive (medium and up)
 @media screen and (min-width: 768px) {
   .crest {
     border-right: 1px solid rgba(255, 255, 255, 0.5);
@@ -93,9 +67,6 @@ a {
     a {
       padding: 0 0.5rem;
     }
-  }
-  .navbar-brand {
-    font-size: 1.250rem;
   }
   .pageheader {
     margin-top: 5rem;
@@ -111,75 +82,3 @@ a {
     }
   }
 }
-
-.infoTiles {
-  .card {
-    box-shadow: 0 -4px 0 0 $bga-blue;
-    border-radius: 0;
-    border-top: 0;
-    background-color: $background-grey;
-    a {
-      display: inline-block;
-      &:before {
-        content: "";
-        display: inline-block;
-        background: url(../img/small-arrow-right.svg) no-repeat bottom left;
-        width: 12px;
-        height: 12px;
-        margin-right: 0.5rem;
-      }
-      &:hover {
-        &:before {
-          background: url(../img/small-arrow-right-hover.svg) no-repeat bottom left;
-        }
-      }
-    }
-  }
-}
-
-.actionTiles {
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 4rem;
-  .primarycard,
-  .secondarycard {
-    min-height: 200px;
-    border: 0;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-    transition: box-shadow .2s ease-in-out;
-    &:hover {
-      -webkit-box-shadow: 1px 1px 6px 4px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 1px 1px 6px 4px rgba(0, 0, 0, 0.1);
-      box-shadow: 1px 1px 6px 4px rgba(0, 0, 0, 0.1);
-    }
-    .card-cta {
-      display: inline-block;
-      .cta-arrow {
-        fill: $link;
-        position: relative;
-        left: .25rem;
-        transition: left .3s ease-in-out
-      }
-        &:hover {
-          text-decoration: none;
-          .cta-arrow {
-          fill: $link-hover;
-          left: 0.625rem;
-        }
-      }  
-    }
-  }
-  .primarycard {
-    border-top: 4px solid $bga-blue-tint1;
-  }
-  .secondarycard {
-    border-top: 4px solid $site-yellow-tint1;
-  }
-}
-
