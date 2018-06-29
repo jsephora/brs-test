@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+  <defs>
+    <style>
+      .ring {
+        fill: #254f90;
+        stroke: #254f90;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .label {
+        font-size: 21px;
+        fill: #fff;
+        font-family: OpenSans-SemiBold, Open Sans;
+        font-weight: 700;
+      }
+
+    </style>
+  </defs>
+  <title>Tooltip hover</title>
+  <circle class="ring" cx="15.49" cy="15.49" r="13.49" />
+  <text class="label" transform="translate(11.28 22.99)">?</text>
+</svg>
